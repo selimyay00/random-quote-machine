@@ -23,10 +23,10 @@ function App() {
   }, [])
 
   // create a function which generates a random index
-    // for the parameter
+    // for the parameter inside
       // use allQuotes length as a limit 
   function randomQuote(quote) {
-    return quote[Math.floor(Math.random() * allQuotes.length)]quote
+    return quote[Math.floor(Math.random() * allQuotes.length)]
   }
   
   function newQuote() {
@@ -35,9 +35,11 @@ function App() {
 
   return (
     <main>
-      <h3>Quote</h3>
-      <i>Author</i>
-      <button onClick={newQuote}>New Quote</button>
+      <div className="quote-box">
+        <h3>{currentQuote.text}</h3>
+        <i>{currentQuote.author}</i>
+        <button onClick={newQuote}>New Quote</button>
+      </div>
     </main>
   )
 }
