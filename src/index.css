@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  background-color: black;
 }
 
 .quote-box {
@@ -13,7 +14,7 @@ body {
   width: 70%;
   max-width: 500px;
   margin: 20% auto;
-  background-color: #1a2247;
+  background-color: #222222;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,11 @@ body {
   border-radius: 10px;
   margin-top: 25px;
   height: 30px;
-  background-color: darkgrey;
-  color: darkgreen;
+  background-color: gray;
+  color: lightgray;
   font-weight: bold;
+}
+
+.quote-box > button:hover {
+  background-color: darkgreen;
 }
