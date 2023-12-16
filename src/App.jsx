@@ -36,8 +36,10 @@ function App() {
   return (
     <main>
       <div className="quote-box">
-        <h3>{currentQuote.text}</h3>
-        <i>{currentQuote.author}</i>
+        <h3 className="quote__text">"{currentQuote.text}"</h3>
+        <p>
+          <i style={{fontSize: 'smaller', color: 'darkgoldenrod'}}>{currentQuote.author}</i>
+        </p>
         <button onClick={newQuote}>New Quote</button>
       </div>
     </main>

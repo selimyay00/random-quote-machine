@@ -27,10 +27,15 @@ body {
   margin-top: 25px;
   height: 30px;
   background-color: gray;
-  color: lightgray;
+  color: white;
   font-weight: bold;
 }
 
 .quote-box > button:hover {
-  background-color: darkgreen;
+  background-color: darkgoldenrod;
+}
+
+.quote__text {
+  text-align: center;
+  line-height: 25px;
 }
